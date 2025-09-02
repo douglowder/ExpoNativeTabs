@@ -51,7 +51,8 @@
       "expo-font",
       "expo-web-browser",
       "react-native-bottom-tabs",
-      "expo-video"
+      "expo-video",
+      "expo-audio"
     ],
     "experiments": {
       "typedRoutes": true
