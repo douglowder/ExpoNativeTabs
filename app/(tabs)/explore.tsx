@@ -1,5 +1,6 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { StyleSheet, Platform } from 'react-native';
+import { scale } from 'react-native-size-matters';
 
 import { Collapsible } from '@/components/Collapsible';
 import { ExternalLink } from '@/components/ExternalLink';
@@ -8,12 +9,16 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { Image } from 'expo-image';
 
-export default function TabTwoScreen() {
+export default function ExploreScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       headerImage={
-        <Ionicons size={310} name="code-slash" style={styles.headerImage} />
+        <Ionicons
+          size={scale(200)}
+          name="code-slash"
+          style={styles.headerImage}
+        />
       }
     >
       <ThemedView style={styles.titleContainer}>
@@ -24,10 +29,15 @@ export default function TabTwoScreen() {
       </ThemedText>
       <Collapsible title="File-based routing">
         <ThemedText>
-          This app has two screens:{' '}
+          This app has three screens:{' '}
           <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText>{' '}
-          and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
+          (the home screen),{' '}
+          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>{' '}
+          (the "Explore" screen), and{' '}
+          <ThemedText type="defaultSemiBold">
+            app/(tabs)/tv_focus.tsx
+          </ThemedText>{' '}
+          (the TV event demo screen).
         </ThemedText>
         <ThemedText>
           The layout file in{' '}
@@ -114,12 +124,12 @@ export default function TabTwoScreen() {
 const styles = StyleSheet.create({
   headerImage: {
     color: '#808080',
-    bottom: -90,
-    left: -35,
+    bottom: scale(-30),
+    left: 0,
     position: 'absolute',
   },
   titleContainer: {
     flexDirection: 'row',
-    gap: 8,
+    gap: scale(8),
   },
 });

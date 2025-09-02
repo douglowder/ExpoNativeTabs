@@ -1,4 +1,6 @@
-import { StyleSheet, Platform } from 'react-native';
+import { StyleSheet, Platform, Pressable } from 'react-native';
+import { Link } from 'expo-router';
+import { scale } from 'react-native-size-matters';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -59,15 +61,15 @@ const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: scale(8),
   },
   stepContainer: {
-    gap: 8,
-    marginBottom: 8,
+    gap: scale(8),
+    marginBottom: scale(8),
   },
   reactLogo: {
-    height: 178,
-    width: 290,
+    height: scale(75),
+    width: scale(150),
     bottom: 0,
     left: 0,
     position: 'absolute',
