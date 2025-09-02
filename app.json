@@ -29,6 +29,7 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      "@react-native-tvos/config-tv",
       "expo-router",
       [
         "react-native-edge-to-edge",
