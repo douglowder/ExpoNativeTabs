@@ -1,0 +1,19 @@
+diff --git a/node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js b/node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js
+index d34dd98..8ea292a 100644
+--- a/node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js
++++ b/node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js
+@@ -13746,10 +13746,10 @@ __DEV__ &&
+       hostContext,
+       internalInstanceHandle
+     ) {
+-      hostContext.isInAParentText ||
+-        console.error(
+-          "Text strings must be rendered within a <Text> component."
+-        );
++      //hostContext.isInAParentText ||
++      //  console.error(
++      //    "Text strings must be rendered within a <Text> component."
++      //  );
+       hostContext = nextReactTag;
+       nextReactTag += 2;
+       return {
