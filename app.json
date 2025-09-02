@@ -30,7 +30,14 @@
     },
     "plugins": [
       "expo-router",
-      ["react-native-edge-to-edge", { "android": { "parentTheme": "Material3.Dynamic" } }],
+      [
+        "react-native-edge-to-edge",
+        {
+          "android": {
+            "parentTheme": "Material3.Dynamic"
+          }
+        }
+      ],
       [
         "expo-build-properties",
         {
@@ -38,7 +45,10 @@
             "useFrameworks": "static"
           }
         }
-      ]
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "react-native-bottom-tabs"
     ],
     "experiments": {
       "typedRoutes": true
