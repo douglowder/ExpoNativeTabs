@@ -68,7 +68,7 @@ export default function HomeScreen() {
             }}
           </Pressable>
         </Link>
-      </ThemedView>{' '}
+      </ThemedView>
     </ParallaxScrollView>
   );
 }
