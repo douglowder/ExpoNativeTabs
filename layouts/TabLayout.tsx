@@ -15,6 +15,7 @@ export default function TabLayout() {
 
   return (
     <Tabs
+      sidebarAdaptable
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
       }}
