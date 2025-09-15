@@ -1,0 +1,20 @@
+diff --git a/node_modules/@react-native/babel-preset/src/plugin-warn-on-deep-imports.js b/node_modules/@react-native/babel-preset/src/plugin-warn-on-deep-imports.js
+index 98f3175..34ebb5a 100644
+--- a/node_modules/@react-native/babel-preset/src/plugin-warn-on-deep-imports.js
++++ b/node_modules/@react-native/babel-preset/src/plugin-warn-on-deep-imports.js
+@@ -99,6 +99,7 @@ module.exports = ({types: t}) => ({
+         state.export = [];
+       },
+       exit(path, state) {
++/*
+         const {body} = path.node;
+ 
+         const requireWarnings = state.require.map(value =>
+@@ -129,6 +130,7 @@ module.exports = ({types: t}) => ({
+         ];
+ 
+         body.push(...warnings);
++ */
+       },
+     },
+   },
